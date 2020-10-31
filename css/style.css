@@ -1,0 +1,311 @@
+/* Cтили для кроссбраузерности елементов НЕ ТРОГАЕМ */
+@import url(components/normalize.css);
+
+/* Базовые стили для форм НЕ ТРОГАЕМ */
+@import url(components/form.css);
+
+/* Базовые стили для типографии (изменяем от макета к макету) */
+@import url(components/typography.css);
+
+/* Сюда пишем общие стили для проекта (изменяем от макета к макету) */
+@import url(components/common.css);
+
+@import url(components/icomoon.css);
+
+@font-face {
+    font-family: 'rubiklight';
+    src: url('fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+         url(fonts/rubik-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.phone {
+    color: #282b2f;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.icon-phone {
+    font-size: 20px;
+    color: #465a64;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.logo {
+    background-color: #f5f8fb;
+    padding: 30px 30px;
+}
+
+.img {
+    justify-content: space-between;
+    display: flex;
+    padding-left: 10px;
+}
+
+.content {
+    margin: 10px;
+    display: flex;
+}
+
+.main-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.main-list li {
+    padding-right: 10px;
+    color: #888;
+    cursor: default;
+}
+
+.main-list a {
+    text-decoration: none;
+}
+
+.main-list li:last-child::after {
+    display: none;
+}
+
+.main-list li+li::before {
+    margin-right: 10px;
+    content: ">";
+}
+
+.main-intro {
+    width: 70%;
+}
+
+.aside {
+    flex-basis: 400px;
+    margin-left: 60px;
+}
+
+.nav {
+    border-top: 2px solid #e0e9f0;
+    border-bottom: 2px solid #e0e9f0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #282b2f;
+    display: block;
+    font-weight: bold;
+    padding: 12px 10px;
+    transition-duration: 1.2s;
+}
+
+.navigation {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+
+.navigation a:hover {
+    color: #009688;
+}
+
+.section {
+    padding-bottom: 60px;
+}
+
+.section one {
+    border-bottom: 2px solid #e0e9f0;
+}
+
+.text-style {
+    color: #1976d2;
+    font-style: italic;
+}
+
+.text-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-bottom: 10px;
+    font-style: italic;
+    color: #1976d2;
+    font-weight: 300;
+    line-height: 1.75;
+    transition-duration: 1.2s;
+}
+
+.text-list li:before {
+    content: '\2013';
+    color: #546e7a;
+    margin: 0 10px 0 0;
+}
+
+.text-list li {
+    margin: 0 0 10px 0;
+}
+
+.text {
+    margin-bottom: 30px;
+}
+
+.row li {
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+}
+
+.row {
+    margin-bottom: 40px;
+    padding-left: 16px;
+}
+
+.row ul {
+    padding-left: 16px;
+}
+
+.social-networks li {
+    margin: 0 10px;
+}
+
+.social-networks {
+    padding: 20px 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-networks a {
+    color: #455a63;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-networks li {
+    margin: 0 10px;
+}
+
+.social-networks a:hover {
+    color: #009688;
+}
+
+.icon-dribbble:hover {
+    color:forestgreen;
+}
+
+.icon-instagram:hover {
+    color: mediumvioletred;
+}
+
+.icon-facebook:hover {
+    color: deepskyblue;
+}
+
+.icon-linkedin:hover {
+    color:cornflowerblue;
+}
+
+.search-form .form-control {
+    padding-right: 60px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.search-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 2px #e0e9f0;
+    background-color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.btn-search {
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    background-size: 20px 20px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    top: 2px;
+    border-radius: 0 3px 3px 0;
+    width: 50px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    color: green;
+}
+
+.line {
+    border-bottom: 2px solid #e0e9f0;
+    margin: 20px 0;
+}
+
+.read {
+    color: #009688;
+    font-weight: 600;
+}
+
+.read:hover {
+    text-decoration: none;
+}
+
+.time {
+    margin-bottom: 15px;
+    color: #bdc6ca;
+    line-height: 1.86;
+}
+
+.buttom {
+    display: block;
+    border: solid 2px #009688;
+    background-color: #ffffff;
+    color: #009688;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 16px 20px;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin: 45px 0;
+    transition: 1s linear;
+}
+
+.buttom:hover {
+    background-color: #7fcac3;
+}
+
+.footer {
+    border-top: 2px solid #e0e9f0;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-top: 25px;
+}
